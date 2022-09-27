@@ -8,6 +8,10 @@ html{
     font-size: 62.5%;
 }
 
+body{
+    background-color: antiquewhite;
+}
+
 .main-heading{
     font-size: 1.6rem;
     text-align: center;
@@ -22,5 +26,41 @@ html{
     width: 20rem;
     height: 20rem;
     border: 2px solid black;
+}
+
+.image img{
+    width: 100%;
+}
+
+figcaption{
+    text-align: center;
+    padding: 0.5rem;
+     font-size: 1.6rem;
+     font-weight: bold;
+}
+
+.addItems{
+    position: relative;
+    background-color: white;
+    border: 2px solid black;
+    margin-top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    padding: 1rem;
+}
+
+.addItems input{
+    width: 70%;
+    border: none;
+    padding: 0.7rem 0.5rem;
+}
+
+
+
+.plus{
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
 }
 
