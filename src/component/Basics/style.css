@@ -43,6 +43,7 @@ figcaption{
     position: relative;
     background-color: white;
     border: 2px solid black;
+    border-radius: 0.5rem;
     margin-top: 4rem;
     left: 50%;
     transform: translateX(-50%);
@@ -51,9 +52,15 @@ figcaption{
 }
 
 .addItems input{
+    font-size: 1.6rem;
+    font-weight: bold;
     width: 70%;
     border: none;
     padding: 0.7rem 0.5rem;
+}
+
+.addItems input:focus{
+    outline: none;
 }
 
 
@@ -64,3 +71,69 @@ figcaption{
     top: 1.5rem;
 }
 
+.show-Items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%
+}
+
+.eachItems{
+    display: flex;
+    justify-content: space-between;
+     border: 2px solid black;
+     border-radius: 0.5rem;
+     border-radius: 0.5rem;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background-color: #212b41;
+    padding: 0.5rem;
+
+}
+
+.eachItems h3{
+    width: 80%;
+    padding: 0.5rem;
+}
+
+.add-btn{
+    padding: 0.5rem;
+}
+
+.main-btn{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    height: 5rem;
+    width: 12rem;
+    align-self: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-btn::before{
+    position: absolute;
+    content: "Remove all";
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #edfd91;
+    transform: translateY(100%);
+    transition: all 0.2s ease-in-out;
+}
+
+.main-btn:hover::before{
+    transform: translateY(0%);
+}
