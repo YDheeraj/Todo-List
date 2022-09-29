@@ -12,10 +12,17 @@ body{
     background-color: antiquewhite;
 }
 
+.green{
+    color: #49bd49;
+}
+.red{
+    color: #ff5c5c;
+}
+
 .main-heading{
     font-size: 1.6rem;
     text-align: center;
-    margin: 5rem;
+    margin: 2rem;
     margin-bottom: 0.5rem;
 }
 
@@ -54,9 +61,10 @@ figcaption{
 .addItems input{
     font-size: 1.6rem;
     font-weight: bold;
-    width: 70%;
+    width: 90%;
     border: none;
     padding: 0.7rem 0.5rem;
+    
 }
 
 .addItems input:focus{
@@ -136,4 +144,14 @@ figcaption{
 
 .main-btn:hover::before{
     transform: translateY(0%);
+}
+
+.togle{
+    position: absolute;
+    right: 0.5rem;
+}
+
+.small{
+    font-size: 2rem;
+    font-weight: 900;
 }
